@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4uO-YI-twK" customClass="DecorateAnliView">
+            <rect key="frame" x="0.0" y="0.0" width="254" height="157"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pHI-sH-7bi">
+                    <rect key="frame" x="4" y="4" width="246" height="125"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="孔雀城 136m 现代奢华" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDB-Qn-GqM">
+                    <rect key="frame" x="4" y="133" width="246" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ar7-Id-ZRF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pto-YO-2lk">
+                    <rect key="frame" x="0.0" y="0.0" width="254" height="157"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="4uO-YI-twK" eventType="touchUpInside" id="k6V-Lg-dQp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tDB-Qn-GqM" firstAttribute="top" secondItem="pHI-sH-7bi" secondAttribute="bottom" constant="4" id="3aJ-VV-XFp"/>
+                <constraint firstItem="pto-YO-2lk" firstAttribute="leading" secondItem="4uO-YI-twK" secondAttribute="leading" id="4XN-fY-oq6"/>
+                <constraint firstItem="pHI-sH-7bi" firstAttribute="leading" secondItem="4uO-YI-twK" secondAttribute="leading" constant="4" id="7GP-Al-7Xd"/>
+                <constraint firstItem="tDB-Qn-GqM" firstAttribute="leading" secondItem="4uO-YI-twK" secondAttribute="leading" constant="4" id="OZm-B2-Dcd"/>
+                <constraint firstAttribute="bottom" secondItem="tDB-Qn-GqM" secondAttribute="bottom" constant="4" id="fF9-mf-fqq"/>
+                <constraint firstItem="pHI-sH-7bi" firstAttribute="top" secondItem="4uO-YI-twK" secondAttribute="top" constant="4" id="gin-Up-liS"/>
+                <constraint firstAttribute="bottom" secondItem="pto-YO-2lk" secondAttribute="bottom" id="jsw-de-VoU"/>
+                <constraint firstAttribute="trailing" secondItem="pto-YO-2lk" secondAttribute="trailing" id="qfc-a7-j7w"/>
+                <constraint firstAttribute="trailing" secondItem="pHI-sH-7bi" secondAttribute="trailing" constant="4" id="ur8-mI-Prf"/>
+                <constraint firstItem="pto-YO-2lk" firstAttribute="top" secondItem="4uO-YI-twK" secondAttribute="top" id="x8C-eW-TZX"/>
+                <constraint firstAttribute="trailing" secondItem="tDB-Qn-GqM" secondAttribute="trailing" constant="4" id="zC2-oO-2LM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="pHI-sH-7bi" id="74B-Ip-Nan"/>
+                <outlet property="titleLabel" destination="tDB-Qn-GqM" id="L4e-s3-QZC"/>
+            </connections>
+            <point key="canvasLocation" x="-27" y="-200.5"/>
+        </view>
+    </objects>
+</document>

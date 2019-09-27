@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendFlowersViewController">
+            <connections>
+                <outlet property="buttonBuy" destination="U7A-Df-aRR" id="EMM-FM-Gtl"/>
+                <outlet property="tableView" destination="G5C-fv-nFq" id="uSS-ge-F8R"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="G5C-fv-nFq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7A-Df-aRR">
+                    <rect key="frame" x="40" y="497" width="295" height="45"/>
+                    <color key="backgroundColor" red="0.18823529411764706" green="0.71372549019607845" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Uoa-Od-1YM"/>
+                    </constraints>
+                    <state key="normal" title="确认支付">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTouchButtonBuy:" destination="-1" eventType="touchUpInside" id="UuE-6C-lqD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="G5C-fv-nFq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AKs-S5-ZPf"/>
+                <constraint firstItem="U7A-Df-aRR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="FlW-7S-vZK"/>
+                <constraint firstAttribute="bottom" secondItem="G5C-fv-nFq" secondAttribute="bottom" constant="200" id="RJg-DQ-zGJ"/>
+                <constraint firstAttribute="trailing" secondItem="U7A-Df-aRR" secondAttribute="trailing" constant="40" id="SUt-0f-emX"/>
+                <constraint firstAttribute="trailing" secondItem="G5C-fv-nFq" secondAttribute="trailing" id="bOO-lh-wbF"/>
+                <constraint firstItem="G5C-fv-nFq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kIV-7L-U33"/>
+                <constraint firstItem="U7A-Df-aRR" firstAttribute="top" secondItem="G5C-fv-nFq" secondAttribute="bottom" constant="30" id="mvf-RR-4z9"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

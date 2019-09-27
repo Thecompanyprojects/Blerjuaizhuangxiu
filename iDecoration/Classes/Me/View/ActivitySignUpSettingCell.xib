@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ActivitySignUpSettingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feC-8f-FzB">
+                        <rect key="frame" x="282" y="14.5" width="30" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="T34-Gx-9qI"/>
+                            <constraint firstAttribute="height" constant="15" id="wJR-pz-sdb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="必填">
+                            <color key="titleColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="sureBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="W3w-iu-bvm"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vW5-ye-qQY">
+                        <rect key="frame" x="36" y="0.0" width="238" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoZ-wB-4mN" userLabel="delete">
+                        <rect key="frame" x="8" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="7cu-aN-SUl"/>
+                            <constraint firstAttribute="height" constant="20" id="nzU-KL-jxf"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="-"/>
+                        <connections>
+                            <action selector="deleteBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FNW-tc-VgO"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="feC-8f-FzB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6A8-z4-KE4"/>
+                    <constraint firstItem="uoZ-wB-4mN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="H9u-Tc-hmu"/>
+                    <constraint firstItem="vW5-ye-qQY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="I4z-eb-aHi"/>
+                    <constraint firstAttribute="trailing" secondItem="feC-8f-FzB" secondAttribute="trailing" constant="8" id="S6B-YB-c1a"/>
+                    <constraint firstItem="vW5-ye-qQY" firstAttribute="leading" secondItem="uoZ-wB-4mN" secondAttribute="trailing" constant="8" id="TFF-tq-RKS"/>
+                    <constraint firstItem="uoZ-wB-4mN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="clY-HK-2wO"/>
+                    <constraint firstAttribute="bottom" secondItem="vW5-ye-qQY" secondAttribute="bottom" id="ub5-eS-bmK"/>
+                    <constraint firstItem="feC-8f-FzB" firstAttribute="leading" secondItem="vW5-ye-qQY" secondAttribute="trailing" constant="8" id="wqA-JG-I4d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentL" destination="vW5-ye-qQY" id="a2I-BY-30B"/>
+                <outlet property="deleteBtn" destination="uoZ-wB-4mN" id="9Pi-Y0-Gbn"/>
+                <outlet property="sureBtn" destination="feC-8f-FzB" id="6xK-kr-PDs"/>
+            </connections>
+            <point key="canvasLocation" x="-149" y="-42"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="-" width="19" height="19"/>
+    </resources>
+</document>

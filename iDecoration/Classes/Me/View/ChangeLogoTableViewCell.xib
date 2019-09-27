@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChangeLogoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yLe-fm-R66">
+                        <rect key="frame" x="16" y="8" width="70" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="ZEH-yQ-gQB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击更换头像" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kem-BS-Ozn">
+                        <rect key="frame" x="94" y="31" width="110" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="ngE-5r-DqX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGe-it-e2c">
+                        <rect key="frame" x="200" y="0.0" width="110" height="79.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="zH8-fT-jy3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="公开手机号">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="publicBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eDo-YN-EcB"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yLe-fm-R66" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4Ze-kP-bTh"/>
+                    <constraint firstItem="yLe-fm-R66" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5OX-Lg-r1Z"/>
+                    <constraint firstItem="yLe-fm-R66" firstAttribute="centerY" secondItem="kem-BS-Ozn" secondAttribute="centerY" id="7Nx-Io-CsK"/>
+                    <constraint firstAttribute="trailing" secondItem="nGe-it-e2c" secondAttribute="trailing" constant="10" id="NBh-9B-577"/>
+                    <constraint firstItem="nGe-it-e2c" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VVE-ag-oDz"/>
+                    <constraint firstItem="nGe-it-e2c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gnK-h4-v0t"/>
+                    <constraint firstAttribute="bottom" secondItem="nGe-it-e2c" secondAttribute="bottom" id="pxU-Ck-7Re"/>
+                    <constraint firstItem="kem-BS-Ozn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="t3d-Y4-uyY"/>
+                    <constraint firstItem="kem-BS-Ozn" firstAttribute="leading" secondItem="yLe-fm-R66" secondAttribute="trailing" constant="8" symbolic="YES" id="tst-L4-xff"/>
+                    <constraint firstItem="yLe-fm-R66" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="xkO-pH-ZKO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="LogoImageView" destination="yLe-fm-R66" id="j9J-HQ-B0v"/>
+                <outlet property="publicBtn" destination="nGe-it-e2c" id="MKr-KF-Ixv"/>
+            </connections>
+            <point key="canvasLocation" x="47" y="-5"/>
+        </tableViewCell>
+    </objects>
+</document>

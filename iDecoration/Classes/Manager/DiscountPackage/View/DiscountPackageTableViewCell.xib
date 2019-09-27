@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscountPackageTableViewCell0" id="KGk-i7-Jjw" customClass="DiscountPackageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="企业网+云管理+号码通+会员成长计划" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAx-rs-A0E">
+                        <rect key="frame" x="10" y="0.0" width="207.5" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="7Cn-kh-oyM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="999元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMb-Yo-grI">
+                        <rect key="frame" x="222.5" y="0.0" width="75.5" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.028834725469999999" blue="0.058608250569999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmW-Ox-eMR">
+                        <rect key="frame" x="298" y="0.0" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tmW-Ox-eMR" secondAttribute="height" multiplier="7:7" id="iSB-86-Una"/>
+                        </constraints>
+                        <state key="normal" image="pitch0"/>
+                        <state key="selected" image="pitch"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="IMb-Yo-grI" secondAttribute="bottom" id="1zD-to-etc"/>
+                    <constraint firstItem="LAx-rs-A0E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="EQV-we-AlP"/>
+                    <constraint firstItem="IMb-Yo-grI" firstAttribute="leading" secondItem="LAx-rs-A0E" secondAttribute="trailing" constant="5" id="JdQ-ZJ-LAe"/>
+                    <constraint firstItem="IMb-Yo-grI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XFO-14-eF9"/>
+                    <constraint firstItem="LAx-rs-A0E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YXo-tg-CJ8"/>
+                    <constraint firstAttribute="bottom" secondItem="tmW-Ox-eMR" secondAttribute="bottom" id="Yif-qf-AnG"/>
+                    <constraint firstItem="tmW-Ox-eMR" firstAttribute="leading" secondItem="IMb-Yo-grI" secondAttribute="trailing" id="as4-R2-qHm"/>
+                    <constraint firstAttribute="bottom" secondItem="LAx-rs-A0E" secondAttribute="bottom" id="fGg-Ra-XJ6"/>
+                    <constraint firstAttribute="trailing" secondItem="tmW-Ox-eMR" secondAttribute="trailing" id="l2m-M0-bhy"/>
+                    <constraint firstItem="tmW-Ox-eMR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="v0U-Fr-N1h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="button" destination="tmW-Ox-eMR" id="LPZ-WY-3UF"/>
+                <outlet property="labelDetail" destination="IMb-Yo-grI" id="NEb-yh-23q"/>
+                <outlet property="labelTitle" destination="LAx-rs-A0E" id="tbF-Xk-8HX"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="81"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscountPackageTableViewCell1" id="1ts-ag-ia8" customClass="DiscountPackageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1ts-ag-ia8" id="NuB-f2-0rl">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhifubao" translatesAutoresizingMaskIntoConstraints="NO" id="2lA-EI-cUW">
+                        <rect key="frame" x="10" y="10.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2lA-EI-cUW" secondAttribute="height" multiplier="38:38" id="jsW-xS-6qw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc8-Ob-sGY">
+                        <rect key="frame" x="58" y="0.0" width="202" height="60.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="kWi-8L-ZhQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30p-W9-iBk">
+                        <rect key="frame" x="260" y="0.0" width="60" height="60.5"/>
+                        <state key="normal" image="pitch0"/>
+                        <state key="selected" image="pitch"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2lA-EI-cUW" firstAttribute="top" secondItem="NuB-f2-0rl" secondAttribute="top" constant="10" id="4ic-kR-UWB"/>
+                    <constraint firstItem="30p-W9-iBk" firstAttribute="top" secondItem="NuB-f2-0rl" secondAttribute="top" id="5EA-th-gI6"/>
+                    <constraint firstAttribute="trailing" secondItem="30p-W9-iBk" secondAttribute="trailing" id="GYF-gP-j3T"/>
+                    <constraint firstAttribute="bottom" secondItem="2lA-EI-cUW" secondAttribute="bottom" constant="10" id="HFy-KY-3a2"/>
+                    <constraint firstAttribute="bottom" secondItem="Wc8-Ob-sGY" secondAttribute="bottom" id="HSv-bj-RyN"/>
+                    <constraint firstItem="2lA-EI-cUW" firstAttribute="leading" secondItem="NuB-f2-0rl" secondAttribute="leading" constant="10" id="PAf-F2-U0n"/>
+                    <constraint firstItem="Wc8-Ob-sGY" firstAttribute="top" secondItem="NuB-f2-0rl" secondAttribute="top" id="TRc-ff-L0Q"/>
+                    <constraint firstItem="30p-W9-iBk" firstAttribute="width" secondItem="30p-W9-iBk" secondAttribute="height" multiplier="7:7" id="Tod-tH-a5P"/>
+                    <constraint firstItem="Wc8-Ob-sGY" firstAttribute="centerY" secondItem="2lA-EI-cUW" secondAttribute="centerY" id="fPL-we-Aih"/>
+                    <constraint firstAttribute="bottom" secondItem="30p-W9-iBk" secondAttribute="bottom" id="n8D-cU-tcs"/>
+                    <constraint firstItem="Wc8-Ob-sGY" firstAttribute="leading" secondItem="2lA-EI-cUW" secondAttribute="trailing" constant="8" id="t3L-Yp-0Gr"/>
+                    <constraint firstItem="30p-W9-iBk" firstAttribute="leading" secondItem="Wc8-Ob-sGY" secondAttribute="trailing" id="vAI-LQ-uUh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="l7U-Gl-uVl"/>
+            <connections>
+                <outlet property="button" destination="30p-W9-iBk" id="w8l-wX-xdE"/>
+                <outlet property="imageViewIcon" destination="2lA-EI-cUW" id="LBL-nA-cEZ"/>
+                <outlet property="labelTitle" destination="Wc8-Ob-sGY" id="MKa-sR-BZQ"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="198"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pitch" width="13.5" height="13.5"/>
+        <image name="pitch0" width="14.5" height="14.5"/>
+        <image name="zhifubao" width="38.5" height="38"/>
+    </resources>
+</document>

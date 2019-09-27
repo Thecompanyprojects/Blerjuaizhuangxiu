@@ -1,0 +1,549 @@
+{
+    "msg": "成功",
+    "code": "1000",
+    "data": {
+        "supplementList": [
+                           {
+                           "supplementName": "棚面腻子",
+                           "positionType": 1,
+                           "supplementId": "21373"
+                           },
+                           {
+                           "supplementId": "21373",
+                           "positionType": 2,
+                           "supplementName": "墙面腻子"
+                           },
+                           {
+                           "supplementName": "墙固地固",
+                           "positionType": 0,
+                           "supplementId": "21374"
+                           },
+                           {
+                           "supplementName": "棚面乳胶漆",
+                           "positionType": 1,
+                           "supplementId": "21375"
+                           },
+                           {
+                           "supplementId": "21375",
+                           "positionType": 2,
+                           "supplementName": "墙面乳胶漆"
+                           },
+                           {
+                           "supplementName": "吊平棚",
+                           "positionType": 0,
+                           "supplementId": "21376"
+                           },
+                           {
+                           "supplementName": "防水",
+                           "positionType": 0,
+                           "supplementId": "21377"
+                           },
+                           {
+                           "supplementName": "包管道",
+                           "positionType": 0,
+                           "supplementId": "21378"
+                           },
+                           {
+                           "supplementName": "地砖铺贴",
+                           "positionType": 0,
+                           "supplementId": "21379"
+                           },
+                           {
+                           "supplementName": "墙砖铺贴",
+                           "positionType": 0,
+                           "supplementId": "21380"
+                           },
+                           {
+                           "supplementName": "吊边棚",
+                           "positionType": 0,
+                           "supplementId": "21389"
+                           },
+                           {
+                           "supplementName": "铲墙皮",
+                           "positionType": 0,
+                           "supplementId": "21390"
+                           },
+                           {
+                           "supplementName": "地面找平",
+                           "positionType": 0,
+                           "supplementId": "21391"
+                           },
+                           {
+                           "supplementName": "石膏线",
+                           "positionType": 0,
+                           "supplementId": "21392"
+                           },
+                           {
+                           "supplementName": "踢脚线铺贴(地砖)",
+                           "positionType": 0,
+                           "supplementId": "21393"
+                           },
+                           {
+                           "supplementName": "壁纸铺贴",
+                           "positionType": 0,
+                           "supplementId": "21394"
+                           },
+                           {
+                           "supplementName": "硅藻泥（无造型）",
+                           "positionType": 0,
+                           "supplementId": "21395"
+                           },
+                           {
+                           "supplementName": "地板",
+                           "positionType": 0,
+                           "supplementId": "21396"
+                           },
+                           {
+                           "supplementName": "卫生间/厨房吊顶",
+                           "positionType": 0,
+                           "supplementId": "21397"
+                           },
+                           {
+                           "supplementName": "地暖",
+                           "positionType": 0,
+                           "supplementId": "21398"
+                           },
+                           {
+                           "supplementName": "棚角线",
+                           "positionType": 0,
+                           "supplementId": "21399"
+                           },
+                           {
+                           "supplementName": "踢脚线(木质)",
+                           "positionType": 0,
+                           "supplementId": "21400"
+                           },
+                           {
+                           "supplementName": "壁布铺贴",
+                           "positionType": 0,
+                           "supplementId": "21401"
+                           },
+                           {
+                           "supplementName": "铝扣板",
+                           "positionType": 0,
+                           "supplementId": "21402"
+                           },
+                           {
+                           "supplementName": "顶角线",
+                           "positionType": 0,
+                           "supplementId": "21403"
+                           },
+                           {
+                           "supplementName": "客厅电视背景墙",
+                           "positionType": 0,
+                           "supplementId": "21404"
+                           },
+                           {
+                           "supplementName": "卧室电视背景墙",
+                           "positionType": 0,
+                           "supplementId": "21405"
+                           },
+                           {
+                           "supplementName": "沙发背景墙",
+                           "positionType": 0,
+                           "supplementId": "21406"
+                           },
+                           {
+                           "supplementName": "床头背景墙",
+                           "positionType": 0,
+                           "supplementId": "21407"
+                           },
+                           {
+                           "supplementName": "书柜",
+                           "positionType": 0,
+                           "supplementId": "21408"
+                           },
+                           {
+                           "supplementName": "酒柜",
+                           "positionType": 0,
+                           "supplementId": "21409"
+                           },
+                           {
+                           "supplementName": "玄关柜",
+                           "positionType": 0,
+                           "supplementId": "21410"
+                           },
+                           {
+                           "supplementName": "阳台半柜",
+                           "positionType": 0,
+                           "supplementId": "21411"
+                           },
+                           {
+                           "supplementName": "阳台通顶柜",
+                           "positionType": 0,
+                           "supplementId": "21412"
+                           },
+                           {
+                           "supplementName": "墙体拆除",
+                           "positionType": 0,
+                           "supplementId": "21413"
+                           },
+                           {
+                           "supplementName": "砌墙",
+                           "positionType": 0,
+                           "supplementId": "21414"
+                           },
+                           {
+                           "supplementName": "衣柜",
+                           "positionType": 0,
+                           "supplementId": "21415"
+                           }
+            ], 
+        "roomSet": {
+            "setId": -1,
+            "setType": 0,
+            "hasDesign": 0,
+            "showDetail": 0,
+            "price": 0,
+            "isPackage": 0,
+            "companyId": 0,
+            "tax": 0,
+            "installationFee": 0,
+            "inst": 0
+        },
+        "roomList": [
+                     {
+                     "typeNo": "1001",
+                     "name": "客厅",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 1001,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 1001,
+                               "companyId": 0,
+                               "positionType": 2,
+                              
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "2015",
+                     "name": "餐厅",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 2015,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 2015,
+                               "companyId": 0,
+                               "positionType": 2,
+                              
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "3004",
+                     "name": "主卧",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3004,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3004,
+                               "companyId": 0,
+                               "positionType": 2,
+                              
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "3005",
+                     "name": "次卧",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3005,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3005,
+                               "companyId": 0,
+                               "positionType": 2,
+                              
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "3006",
+                     "name": "儿童房",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3006,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3006,
+                               "companyId": 0,
+                               "positionType": 2,
+                              
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "3007",
+                     "name": "老人房",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3007,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3007,
+                               "companyId": 0,
+                               "positionType": 2,
+                              
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "3008",
+                     "name": "书房",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3008,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3008,
+                               "companyId": 0,
+                               "positionType": 2,
+                     
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "3009",
+                     "name": "客房123",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3009,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 3009,
+                               "companyId": 0,
+                               "positionType": 2,
+                            
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "4012",
+                     "name": "阳台1",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 4012,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 4012,
+                               "companyId": 0,
+                               "positionType": 2,
+                         
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "4013",
+                     "name": "阳台2345",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 4013,
+                               "companyId": 0,
+                               "positionType": 1,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4354,
+                               "roomType": 4013,
+                               "companyId": 0,
+                               "positionType": 2,
+                              
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "5017",
+                     "name": "卫生间",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4358,
+                               "roomType": 5017,
+                               "companyId": 0,
+                               "positionType": 0,
+                             
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4360,
+                               "roomType": 5017,
+                               "companyId": 0,
+                               "positionType": 0,
+                             
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4361,
+                               "roomType": 5017,
+                               "companyId": 0,
+                               "positionType": 0,
+                            
+                               "itemNumber": 0
+                               }
+                               ]
+                     },
+                     {
+                     "typeNo": "6020",
+                     "name": "厨房",
+                     "items": [
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4358,
+                               "roomType": 6020,
+                               "companyId": 0,
+                               "positionType": 0,
+                               
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4359,
+                               "roomType": 6020,
+                               "companyId": 0,
+                               "positionType": 0,
+                             
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4360,
+                               "roomType": 6020,
+                               "companyId": 0,
+                               "positionType": 0,
+                              
+                               "itemNumber": 0
+                               },
+                               {
+                               "roomItemId": 0,
+                               "setId": 0,
+                               "supplementId": 4361,
+                               "roomType": 6020,
+                               "companyId": 0,
+                               "positionType": 0,
+                              
+                               "itemNumber": 0
+                               }
+                               ]
+                     }
+                     ]
+    }
+}

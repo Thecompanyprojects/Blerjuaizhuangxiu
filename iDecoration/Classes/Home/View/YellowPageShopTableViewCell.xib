@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="shop" rowHeight="86" id="8jy-WF-Rel" customClass="YellowPageShopTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8jy-WF-Rel" id="oUV-NA-Tva">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3Ia-1A-9nw">
+                        <rect key="frame" x="25" y="16" width="67.5" height="67.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3Ia-1A-9nw" secondAttribute="height" multiplier="50:50" id="Vkr-Ik-13F"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="箭牌卫浴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tp0-iF-YD2">
+                        <rect key="frame" x="100.5" y="16" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[怀柔区]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnz-Xf-vDc">
+                        <rect key="frame" x="100.5" y="43" width="295.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommendVip" translatesAutoresizingMaskIntoConstraints="NO" id="qSY-Jg-FLw">
+                        <rect key="frame" x="140" y="17" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Dg2-1x-tl3"/>
+                            <constraint firstAttribute="width" constant="18" id="VnY-uc-e3a"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip" translatesAutoresizingMaskIntoConstraints="NO" id="mrY-6f-Oqq">
+                        <rect key="frame" x="163" y="19" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="26p-2H-MAU"/>
+                            <constraint firstAttribute="height" constant="14" id="EZY-3R-djc"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="certificateState" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-1R-D0p">
+                        <rect key="frame" x="64.5" y="14" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="P7s-Sh-PnQ"/>
+                            <constraint firstAttribute="height" constant="30" id="rlL-0v-6iF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[怀柔区]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2K-V5-cDa">
+                        <rect key="frame" x="100.5" y="66.5" width="295.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="m8P-1R-D0p" firstAttribute="top" secondItem="3Ia-1A-9nw" secondAttribute="top" constant="-2" id="A4L-7I-eav"/>
+                    <constraint firstItem="3Ia-1A-9nw" firstAttribute="centerY" secondItem="oUV-NA-Tva" secondAttribute="centerY" id="AIo-Ft-dYB"/>
+                    <constraint firstItem="3Ia-1A-9nw" firstAttribute="leading" secondItem="oUV-NA-Tva" secondAttribute="leadingMargin" constant="5" id="C7D-5o-AJ6"/>
+                    <constraint firstItem="c2K-V5-cDa" firstAttribute="leading" secondItem="pnz-Xf-vDc" secondAttribute="leading" id="CzD-e3-RCg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="c2K-V5-cDa" secondAttribute="trailing" id="HCt-IX-BuY"/>
+                    <constraint firstItem="c2K-V5-cDa" firstAttribute="top" secondItem="pnz-Xf-vDc" secondAttribute="bottom" constant="10" id="KHe-ro-eDO"/>
+                    <constraint firstItem="m8P-1R-D0p" firstAttribute="trailing" secondItem="3Ia-1A-9nw" secondAttribute="trailing" constant="2" id="P4s-wn-d7K"/>
+                    <constraint firstItem="pnz-Xf-vDc" firstAttribute="top" secondItem="tp0-iF-YD2" secondAttribute="bottom" constant="10" id="PBP-Dj-mqg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pnz-Xf-vDc" secondAttribute="trailing" id="V7R-jS-0H3"/>
+                    <constraint firstItem="3Ia-1A-9nw" firstAttribute="top" secondItem="oUV-NA-Tva" secondAttribute="topMargin" constant="5" id="dXe-aK-5GZ"/>
+                    <constraint firstItem="tp0-iF-YD2" firstAttribute="top" secondItem="3Ia-1A-9nw" secondAttribute="top" id="fmE-ng-1Os"/>
+                    <constraint firstItem="qSY-Jg-FLw" firstAttribute="centerY" secondItem="mrY-6f-Oqq" secondAttribute="centerY" id="n9j-Mb-bLk"/>
+                    <constraint firstItem="pnz-Xf-vDc" firstAttribute="leading" secondItem="tp0-iF-YD2" secondAttribute="leading" id="nqv-fZ-lpG"/>
+                    <constraint firstItem="mrY-6f-Oqq" firstAttribute="leading" secondItem="qSY-Jg-FLw" secondAttribute="trailing" constant="5" id="pjF-PN-u2E"/>
+                    <constraint firstItem="tp0-iF-YD2" firstAttribute="leading" secondItem="3Ia-1A-9nw" secondAttribute="trailing" constant="8" id="r6d-YN-z3r"/>
+                    <constraint firstItem="mrY-6f-Oqq" firstAttribute="leading" secondItem="tp0-iF-YD2" secondAttribute="trailing" constant="5" id="t8R-Ix-uKq"/>
+                    <constraint firstItem="mrY-6f-Oqq" firstAttribute="bottom" secondItem="tp0-iF-YD2" secondAttribute="bottom" id="yBl-zW-7rc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="certificateStatusIV" destination="m8P-1R-D0p" id="xwW-7y-pQE"/>
+                <outlet property="companyLogo" destination="3Ia-1A-9nw" id="P0m-7R-EDx"/>
+                <outlet property="companyNameLabel" destination="tp0-iF-YD2" id="KO9-Ah-m3k"/>
+                <outlet property="labelDetail1" destination="pnz-Xf-vDc" id="4kk-5V-Z16"/>
+                <outlet property="labelDetail2" destination="c2K-V5-cDa" id="wZC-Bd-NQu"/>
+                <outlet property="recommendVipIV" destination="qSY-Jg-FLw" id="DMC-zh-vJL"/>
+                <outlet property="vipIVLeftMarginCon" destination="t8R-Ix-uKq" id="DEE-rw-eNk"/>
+                <outlet property="vipImage" destination="mrY-6f-Oqq" id="5Sc-kP-RGu"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="-128"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="certificateState" width="30" height="30"/>
+        <image name="default_icon" width="50" height="50"/>
+        <image name="recommendVip" width="14.399999618530273" height="14.399999618530273"/>
+        <image name="vip" width="14" height="14"/>
+    </resources>
+</document>

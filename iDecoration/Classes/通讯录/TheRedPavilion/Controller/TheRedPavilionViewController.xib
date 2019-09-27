@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TheRedPavilionViewController">
+            <connections>
+                <outlet property="buttonAll" destination="eWM-wS-rXz" id="HtX-Mz-7z3"/>
+                <outlet property="buttonBanner" destination="Vcr-uE-PLU" id="SsL-QV-eDd"/>
+                <outlet property="buttonFlower" destination="GT0-17-x8F" id="xjx-P7-e8b"/>
+                <outlet property="topViewToTop" destination="AwG-VC-Mbe" id="iXu-kX-RHr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8CC-2B-tYL">
+                    <rect key="frame" x="0.0" y="107" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lZU-uO-3xz"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-wS-rXz">
+                    <rect key="frame" x="0.0" y="64" width="125" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="jQq-Co-1dI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="全部">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTouchButtonTop:" destination="-1" eventType="touchUpInside" id="4m2-hf-tEY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcr-uE-PLU">
+                    <rect key="frame" x="125" y="64" width="125" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="锦旗" image="icon_jiantou_red">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTouchButtonTop:" destination="-1" eventType="touchUpInside" id="OGd-x8-cod"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GT0-17-x8F">
+                    <rect key="frame" x="250" y="64" width="125" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="鲜花" image="icon_jiantou_red">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTouchButtonTop:" destination="-1" eventType="touchUpInside" id="Ef6-dR-CKW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vcr-uE-PLU" firstAttribute="leading" secondItem="eWM-wS-rXz" secondAttribute="trailing" id="49g-ZE-fma"/>
+                <constraint firstItem="Vcr-uE-PLU" firstAttribute="height" secondItem="eWM-wS-rXz" secondAttribute="height" id="6ZI-fo-QSm"/>
+                <constraint firstItem="8CC-2B-tYL" firstAttribute="top" secondItem="eWM-wS-rXz" secondAttribute="bottom" id="7GF-QB-c7b"/>
+                <constraint firstItem="eWM-wS-rXz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="AwG-VC-Mbe"/>
+                <constraint firstItem="8CC-2B-tYL" firstAttribute="top" secondItem="GT0-17-x8F" secondAttribute="bottom" id="DXA-7h-8z1"/>
+                <constraint firstAttribute="trailing" secondItem="8CC-2B-tYL" secondAttribute="trailing" id="GBC-g8-wMA"/>
+                <constraint firstItem="Vcr-uE-PLU" firstAttribute="centerY" secondItem="eWM-wS-rXz" secondAttribute="centerY" id="HZK-Hl-sa4"/>
+                <constraint firstItem="eWM-wS-rXz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SZF-jg-Krc"/>
+                <constraint firstItem="GT0-17-x8F" firstAttribute="width" secondItem="eWM-wS-rXz" secondAttribute="width" id="TKY-GF-mP5"/>
+                <constraint firstAttribute="trailing" secondItem="GT0-17-x8F" secondAttribute="trailing" id="ePp-dd-SAO"/>
+                <constraint firstItem="GT0-17-x8F" firstAttribute="leading" secondItem="Vcr-uE-PLU" secondAttribute="trailing" id="geK-4V-hUv"/>
+                <constraint firstItem="8CC-2B-tYL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iYZ-mZ-Owu"/>
+                <constraint firstItem="Vcr-uE-PLU" firstAttribute="width" secondItem="eWM-wS-rXz" secondAttribute="width" id="kcM-10-JTa"/>
+                <constraint firstItem="GT0-17-x8F" firstAttribute="centerY" secondItem="eWM-wS-rXz" secondAttribute="centerY" id="w9Z-e5-7aN"/>
+                <constraint firstItem="GT0-17-x8F" firstAttribute="height" secondItem="eWM-wS-rXz" secondAttribute="height" id="zES-hE-RPN"/>
+                <constraint firstItem="8CC-2B-tYL" firstAttribute="top" secondItem="Vcr-uE-PLU" secondAttribute="bottom" id="zWn-bN-XtY"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="77.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_jiantou_red" width="7" height="11"/>
+    </resources>
+</document>

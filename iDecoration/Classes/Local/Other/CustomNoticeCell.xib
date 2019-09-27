@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomNoticeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-N6-nxU">
+                    <rect key="frame" x="0.0" y="7" width="26" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="QHr-pU-AAe"/>
+                        <constraint firstAttribute="width" constant="26" id="R63-kJ-F4x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.38945606700000002" blue="0.22887987300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAh-NX-Kau">
+                    <rect key="frame" x="32" y="14" width="333" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea4-oU-zoT">
+                    <rect key="frame" x="32" y="33" width="333" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYP-Ep-cjh">
+                    <rect key="frame" x="0.0" y="26" width="26" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="sqa-ZW-HuQ"/>
+                        <constraint firstAttribute="height" constant="14" id="yWh-Zh-86j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.38945606700000002" blue="0.22887987300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.88549951770000002" green="1" blue="0.86145661350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rJi-N6-nxU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="57x-2h-uVk"/>
+                <constraint firstAttribute="trailing" secondItem="ea4-oU-zoT" secondAttribute="trailing" constant="10" id="80e-fZ-6f0"/>
+                <constraint firstItem="BAh-NX-Kau" firstAttribute="centerY" secondItem="rJi-N6-nxU" secondAttribute="centerY" id="J3B-LF-z3K"/>
+                <constraint firstItem="BAh-NX-Kau" firstAttribute="leading" secondItem="ea4-oU-zoT" secondAttribute="leading" id="Kj2-ih-OEo"/>
+                <constraint firstItem="rJi-N6-nxU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="Q6N-Qk-vJ3"/>
+                <constraint firstItem="BYP-Ep-cjh" firstAttribute="top" secondItem="rJi-N6-nxU" secondAttribute="bottom" constant="5" id="R8h-6c-5yq"/>
+                <constraint firstAttribute="trailing" secondItem="BAh-NX-Kau" secondAttribute="trailing" constant="10" id="dca-gS-nbB"/>
+                <constraint firstItem="BAh-NX-Kau" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="flw-dY-8Nw"/>
+                <constraint firstItem="BYP-Ep-cjh" firstAttribute="leading" secondItem="rJi-N6-nxU" secondAttribute="leading" id="uKJ-hN-KA0"/>
+                <constraint firstItem="ea4-oU-zoT" firstAttribute="centerY" secondItem="BYP-Ep-cjh" secondAttribute="centerY" id="w5K-nn-xqK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tagLab0" destination="rJi-N6-nxU" id="OhU-G7-cbd"/>
+                <outlet property="tagLab1" destination="BYP-Ep-cjh" id="d9A-Cw-PF1"/>
+                <outlet property="titleLab0" destination="BAh-NX-Kau" id="OpZ-6G-eYi"/>
+                <outlet property="titleLab1" destination="ea4-oU-zoT" id="hog-Og-q1a"/>
+            </connections>
+            <point key="canvasLocation" x="-238.5" y="-410"/>
+        </view>
+    </objects>
+</document>

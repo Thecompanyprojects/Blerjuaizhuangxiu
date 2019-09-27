@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DiscountPackageFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhc-cg-Rzz">
+                    <rect key="frame" x="40" y="40" width="295" height="45"/>
+                    <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="l9S-AA-XWH"/>
+                    </constraints>
+                    <state key="normal" title="确定支付"/>
+                    <connections>
+                        <action selector="didTouchButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="4dc-bk-vPE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETp-HK-Xo1">
+                    <rect key="frame" x="40" y="85" width="70" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BBw-KC-dEF"/>
+                        <constraint firstAttribute="width" constant="70" id="uzU-xt-BKr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="支付协议" image="protocol">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTouchButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="9e2-Gd-d44"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ori-zO-ISJ">
+                    <rect key="frame" x="258" y="85" width="77" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nAM-Ds-aYu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="增值服务协议" image="protocol">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTouchButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="O3O-8U-xrv"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开通套餐后，默认原来单项开通的会员，平均分配到每个会员内。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chJ-hU-yhy">
+                    <rect key="frame" x="20" y="125" width="335" height="31.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31.5" id="e0y-4i-LnX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ETp-HK-Xo1" firstAttribute="top" secondItem="Dhc-cg-Rzz" secondAttribute="bottom" id="86z-jZ-pAQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="chJ-hU-yhy" secondAttribute="bottom" constant="43.5" id="A39-DP-Ks8"/>
+                <constraint firstItem="Dhc-cg-Rzz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CHU-zB-62Z"/>
+                <constraint firstItem="chJ-hU-yhy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Dne-p1-Na6"/>
+                <constraint firstItem="Dhc-cg-Rzz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="J9t-H6-gRj"/>
+                <constraint firstItem="chJ-hU-yhy" firstAttribute="centerX" secondItem="Dhc-cg-Rzz" secondAttribute="centerX" id="LwR-qt-9kP"/>
+                <constraint firstAttribute="trailing" secondItem="chJ-hU-yhy" secondAttribute="trailing" constant="20" id="Xkl-v0-F6z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dhc-cg-Rzz" secondAttribute="trailing" constant="40" id="csH-Wf-dAg"/>
+                <constraint firstItem="chJ-hU-yhy" firstAttribute="top" secondItem="Dhc-cg-Rzz" secondAttribute="bottom" constant="40" id="dH7-p7-bgR"/>
+                <constraint firstItem="ori-zO-ISJ" firstAttribute="trailing" secondItem="Dhc-cg-Rzz" secondAttribute="trailing" id="gMD-9b-5Z2"/>
+                <constraint firstItem="ori-zO-ISJ" firstAttribute="top" secondItem="Dhc-cg-Rzz" secondAttribute="bottom" id="n2L-4o-XWR"/>
+                <constraint firstItem="Dhc-cg-Rzz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="ui4-Fr-3qh"/>
+                <constraint firstItem="ETp-HK-Xo1" firstAttribute="leading" secondItem="Dhc-cg-Rzz" secondAttribute="leading" id="wlc-0o-7gc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="button" destination="Dhc-cg-Rzz" id="3No-IK-pa9"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="protocol" width="15" height="15"/>
+    </resources>
+</document>

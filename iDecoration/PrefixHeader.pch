@@ -1,0 +1,185 @@
+//
+//  PrefixHeader.pch
+//  iDecoration
+//
+//  Created by RealSeven on 17/2/8.
+//  Copyright © 2017年 RealSeven. All rights reserved.
+//
+
+#ifdef __OBJC__
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/**
+ *  头文件
+ */
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <HyphenateLite/HyphenateLite.h>
+#import "EaseUI.h"
+#import "VLoopScrollView.h"
+#import "FMDB.h"
+#import <Reachability.h>
+#import "MBProgressHUD.h"
+#import "WXApi.h"
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+#import "QRCodeView.h"
+#import "SGQRCodeTool.h"
+#import "UIColor+hexColor.h"
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import <AFNetworking.h>
+#import <YTKNetworkConfig.h>
+#import <YTKRequest.h>
+#import <YYModel.h>
+#import <UIImageView+WebCache.h>
+#import "MyMD5.h"
+#import "CommanApi.h"
+#import "PublicTool.h"
+#import <IQKeyboardManager.h>
+#import <IQKeyboardReturnKeyHandler.h>
+#import <SKArchCutter.h>
+#import "UIView+Extension.h"
+#import "NSString+Extension.h"
+#import "GTMBase64.h"
+#import "UploadImageApi.h"
+#import "UIBarButtonItem+Item.h"
+#import "NetManager.h"
+#import "PublicTool.h"
+#import "BLEJColorHeader.h"
+#import "BLEJFrameHeader.h"
+#import "BLEJUrlHeader.h"
+#import "UIView+Frame.h"
+#import "UIView+TTHUDView.h"
+#import "UITableView+BLEJReloadRowAndSection.h"
+#import "wangHeader.h"
+#import "GetImageVerificationCode.h"//图形验证码
+//#import "TTActionSheet.h"
+#import "TTAlertView.h"
+#import "TTHelper.h"
+#import "NSString+Size.h"
+#import "SNViewController.h"
+#import <UITableView+FDTemplateLayoutCell.h>
+#import <UMMobClick/MobClick.h>
+#import "NSObject+CompressImage.h"
+#import "NSDate+Time.h"
+#import "UIButton+FillColor.h"
+#import "ZYCTool.h"
+#import "NetWorkRequest.h"
+#import "CacheData.h"
+#import "UIView+RectCorner.h"
+#import "PellTableViewSelect.h"
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import "UIScrollView+EmptyDataSet.h"
+#import "NSString+change.h"
+#import "UIViewController+Runtime.h"
+#import <SDAutoLayout.h>
+#import "LYShareMenuView.h"
+/*
+ 测试环境  TEST_DEFINE 设置为1  执行 #ifdef 和 #endif  之间的代码
+ 
+ 线上环境 注释掉该行即可
+ 
+ */
+#define TEST_DEFINE 0
+
+
+// 绑定微信成功后的通知
+#define kWeiXinBindSuccess @"WeiXinBindSuccess"
+// 收到远程通知后发送通知，跟新消息中心消息数字
+#define kReciveRemoteNotification @"reciveRemoteNotification"
+// 退出登录前发送通知，消息数全部置0
+#define klognOutNotification @"lognOutNotification"
+// 登录成功
+#define kDidLoginSuccess @"kDidLoginSuccess"
+// 是否绑定微信
+#define kBindWeiXin @"bingWeixin"
+// 退出公司后发送通知， 清空消息
+#define kOutCompany @"kOutCompany"
+
+// 新优秀员工页面的通知
+/****进入置顶通知****/
+#define kHomeGoTopNotification               @"Home_Go_Top"
+/****离开置顶通知****/
+#define kHomeLeaveTopNotification            @"Home_Leave_Top"
+
+
+// 判断string是否为空 nil 或者 @""；
+#define IsNilString(__String) (__String==nil || [__String isEqualToString:@"(null)"] || [__String isEqualToString:@""] || [[__String stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""])
+
+//打印调试
+#if DEBUG
+#define YSNLog(fmt,...)    NSLog((@"%s [Line %d] " fmt),__PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);  /**<输出语句*/
+#else
+#define YSNLog(fmt, ...)
+#endif
+
+//比例
+#define widthScale  [UIScreen mainScreen].bounds.size.width/320
+#define hightScale   [UIScreen mainScreen].bounds.size.height/568
+
+#define screenW  [UIScreen mainScreen].bounds.size.width  /// 屏幕宽
+#define screenH  [UIScreen mainScreen].bounds.size.height /// 屏幕高
+#define Xrang [ UIScreen mainScreen ].bounds.size.width/375 //屏幕宽比例
+#define Yrang [ UIScreen mainScreen ].bounds.size.height/667//屏幕高比例
+
+#define AdaptedWidth(x)  ceilf((x) * Xrang)
+#define AdaptedHeight(x) ceilf((x) * Yrang)
+#define AdaptedFontSize(R)     [UIFont systemFontOfSize:AdaptedWidth(R)]
+
+#define SystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+// 弱引用
+#define WeakSelf(type)  __weak __typeof(type) weak##type = type;//弱引用
+#define StrongSelf(type)  __strong __typeof(self) strongself = type;//强引用
+
+#define USERDEFAULTSSET(a,b) [[NSUserDefaults standardUserDefaults] setObject:a forKey:b];[[NSUserDefaults standardUserDefaults] synchronize];
+#define USERDEFAULTSGET(a) [[NSUserDefaults standardUserDefaults] objectForKey:a];
+
+#define GETAgencyId @([[PublicTool defaultTool] publicToolsGetUserInfoModelFromDict].agencyId)
+
+#define isIMP [[[NSUserDefaults standardUserDefaults] objectForKey:@"impl"] isEqualToString:@"1"]?true:false
+
+#define  NB_FONTSEIZ_WATRE     [UIFont systemFontOfSize:16]
+#define  NB_FONTSEIZ_BIG     [UIFont systemFontOfSize:16]
+#define  NB_FONTSEIZ_NOR   [UIFont systemFontOfSize:14]
+#define  NB_FONTSEIZ_SMALL   [UIFont systemFontOfSize:12]
+#define  NB_FONTSEIZ_TINE       [UIFont systemFontOfSize:10]
+
+//图片压缩比
+#define PHOTO_COMPRESS 0.7  // 所有使用该比例压缩的图片都换成使用该方法 [NSObject imageData:image];压缩图片
+
+//banner间隔
+#define BANNERTIME 5
+
+#pragma mark -- 常用字符串
+#define AGENCYDICT @"agencyDict"
+#define DEFAULTLOGO @"defaultLogo"
+#define JOBDICT @"jobDict"
+#define DefaultManPic @"defaultman.png"
+#define DefaultWomenPic @"defaultwomen.png"
+#define DefaultIcon @"default_icon.png"
+#define KRoleTypeList @"roleTypeList"
+#define KGeniusSquareLabelList @"GeniusSquareLabelList"
+#define KDictionaryOfCityIdCountyId @"DictionaryOfCityIdCountyId"
+#define SHOWMESSAGE(a) [[PublicTool defaultTool] publicToolsHUDStr:a controller:self sleep:2.0];
+#define ShowMB [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+#define HiddenMB [MBProgressHUD hideHUDForView:self.view animated:YES];
+#define NUMBERSANDDIAN @"0123456789."
+#define NUMBERS @"0123456789"
+
+ #define ZXUserDefaults [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"jinQiCount"];
+#define ZXUserDefaults2 [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"XinahuaCount"];
+
+#define NETERROR (([NSObject networkingStatesFromStatebar].length == 0) ? @"无法连接到网络，请检查网络设置" : @"加载失败，请稍后重试")
+#define isCustomMadeHidden 1
+#define KIsCompany(a) [ZYCTool isCompany:a]
+#endif /* PrefixHeader_pch */
+
+
+#endif
+

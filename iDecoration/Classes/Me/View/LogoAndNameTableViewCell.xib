@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="LogoAndNameTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3JA-lt-wfT">
+                        <rect key="frame" x="16" y="8" width="70" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="U7r-8y-l9S"/>
+                            <constraint firstAttribute="height" constant="70" id="YCv-23-Gxk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlb-J7-siF">
+                        <rect key="frame" x="94" y="16" width="0.0" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman" translatesAutoresizingMaskIntoConstraints="NO" id="rNt-uj-eL7">
+                        <rect key="frame" x="104" y="16" width="20" height="19"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9f-de-rs9">
+                        <rect key="frame" x="227" y="50" width="69" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="Ukh-QB-ZO8"/>
+                            <constraint firstAttribute="height" constant="20" id="xo5-QY-nza"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="查看名片"/>
+                        <connections>
+                            <action selector="lookCardBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rbm-ra-vtj"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTR-Du-P0i">
+                        <rect key="frame" x="113" y="50" width="69" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="CTI-xK-qwV"/>
+                            <constraint firstAttribute="height" constant="20" id="Qor-bD-rL9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="更改封面"/>
+                        <connections>
+                            <action selector="coverBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="K1z-5u-RMH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UTR-Du-P0i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="1aV-g0-Z7m"/>
+                    <constraint firstItem="rNt-uj-eL7" firstAttribute="leading" secondItem="Zlb-J7-siF" secondAttribute="trailing" constant="10" id="5tt-bk-hZ4"/>
+                    <constraint firstItem="rNt-uj-eL7" firstAttribute="top" secondItem="Zlb-J7-siF" secondAttribute="top" id="7vs-Ux-ESd"/>
+                    <constraint firstItem="3JA-lt-wfT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="GpY-Vh-opR"/>
+                    <constraint firstItem="Zlb-J7-siF" firstAttribute="leading" secondItem="3JA-lt-wfT" secondAttribute="trailing" constant="8" symbolic="YES" id="O1c-0R-Hhw"/>
+                    <constraint firstItem="3JA-lt-wfT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Rqw-BK-Bx2"/>
+                    <constraint firstItem="K9f-de-rs9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="WPM-1m-IaU"/>
+                    <constraint firstItem="3JA-lt-wfT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="WqC-ZI-Nab"/>
+                    <constraint firstItem="K9f-de-rs9" firstAttribute="leading" secondItem="UTR-Du-P0i" secondAttribute="trailing" constant="45" id="cRX-nF-gj0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Zlb-J7-siF" secondAttribute="bottom" constant="33" id="iJq-gM-MdK"/>
+                    <constraint firstItem="Zlb-J7-siF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="kbA-R9-oCH"/>
+                    <constraint firstAttribute="trailing" secondItem="K9f-de-rs9" secondAttribute="trailing" constant="24" id="wLD-le-bnv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="LogoImageView" destination="3JA-lt-wfT" id="eMw-wH-g7v"/>
+                <outlet property="NameLabel" destination="Zlb-J7-siF" id="G6v-Ad-HYO"/>
+                <outlet property="genderView" destination="rNt-uj-eL7" id="uGe-81-FsR"/>
+                <outlet property="lookPersonCardBtn" destination="K9f-de-rs9" id="XWn-tZ-AwH"/>
+                <outlet property="modifyCoverBtn" destination="UTR-Du-P0i" id="Sg9-0u-nth"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="58"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="woman" width="20" height="19"/>
+    </resources>
+</document>

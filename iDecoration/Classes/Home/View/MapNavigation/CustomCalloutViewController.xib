@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomCalloutViewController">
+            <connections>
+                <outlet property="companyAddresstitle" destination="oNb-3c-VHi" id="jXT-Qx-iHH"/>
+                <outlet property="companyNametitle" destination="eoI-gd-k83" id="TPU-ge-IMw"/>
+                <outlet property="navButton" destination="DYx-6T-Nwg" id="MVG-mo-fPp"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0G7-RT-bMb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBack" translatesAutoresizingMaskIntoConstraints="NO" id="YNR-gh-VLt">
+                    <rect key="frame" x="0.0" y="0.0" width="213" height="60"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公司名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoI-gd-k83">
+                    <rect key="frame" x="6" y="6" width="138" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="138" id="8i0-U9-MzT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公司地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNb-3c-VHi">
+                    <rect key="frame" x="6" y="28" width="138" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="138" id="fna-Rj-Wwq"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="oyg-9D-z01"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.54126776822932476" green="0.54126776822932476" blue="0.54126776822932476" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="导航" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLn-no-PaC">
+                    <rect key="frame" x="174" y="17" width="29" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav" translatesAutoresizingMaskIntoConstraints="NO" id="16N-FG-uFG">
+                    <rect key="frame" x="155" y="17" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="3Zc-wK-6Um"/>
+                        <constraint firstAttribute="height" constant="15" id="CvN-xY-5YE"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYx-6T-Nwg">
+                    <rect key="frame" x="147" y="0.0" width="66" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6Ju-HX-Cqj"/>
+                        <constraint firstAttribute="width" constant="66" id="hO8-j9-7zR"/>
+                    </constraints>
+                    <connections>
+                        <action selector="navButtonAction:" destination="-1" eventType="touchUpInside" id="zwi-li-EvF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KLn-no-PaC" firstAttribute="leading" secondItem="16N-FG-uFG" secondAttribute="trailing" constant="4" id="4cc-Py-gW8"/>
+                <constraint firstItem="oNb-3c-VHi" firstAttribute="top" secondItem="eoI-gd-k83" secondAttribute="bottom" constant="6" id="DK6-Wj-qv5"/>
+                <constraint firstAttribute="bottom" secondItem="YNR-gh-VLt" secondAttribute="bottom" id="KfV-6i-CUO"/>
+                <constraint firstItem="eoI-gd-k83" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="Krn-3S-bv5"/>
+                <constraint firstItem="DYx-6T-Nwg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M2L-n4-dNU"/>
+                <constraint firstItem="YNR-gh-VLt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="N5B-RE-mci"/>
+                <constraint firstItem="oNb-3c-VHi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="Vdo-58-iu9"/>
+                <constraint firstItem="KLn-no-PaC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-5" id="XAo-o8-iSN"/>
+                <constraint firstAttribute="trailing" secondItem="KLn-no-PaC" secondAttribute="trailing" constant="10" id="g5u-Ds-Pk9"/>
+                <constraint firstAttribute="trailing" secondItem="DYx-6T-Nwg" secondAttribute="trailing" id="jwG-q8-CA5"/>
+                <constraint firstItem="eoI-gd-k83" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="qWn-HA-wcA"/>
+                <constraint firstItem="YNR-gh-VLt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qrJ-cX-cdT"/>
+                <constraint firstItem="16N-FG-uFG" firstAttribute="centerY" secondItem="KLn-no-PaC" secondAttribute="centerY" constant="-1" id="vZd-4X-JIm"/>
+                <constraint firstAttribute="trailing" secondItem="YNR-gh-VLt" secondAttribute="trailing" id="yAd-OM-qn6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-30.5" y="333"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav" width="200" height="200"/>
+        <image name="navBack" width="747" height="210"/>
+    </resources>
+</document>

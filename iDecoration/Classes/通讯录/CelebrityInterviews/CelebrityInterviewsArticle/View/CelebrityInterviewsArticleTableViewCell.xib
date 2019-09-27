@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CelebrityInterviewsArticleTableViewCell0" id="KGk-i7-Jjw" customClass="CelebrityInterviewsArticleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsF-K0-n0x">
+                        <rect key="frame" x="15" y="10" width="290" height="23.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="13.5" id="1ci-vf-dIg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nsF-K0-n0x" secondAttribute="trailing" constant="15" id="HEF-Vf-1VP"/>
+                    <constraint firstAttribute="bottom" secondItem="nsF-K0-n0x" secondAttribute="bottom" constant="10" id="YyM-lO-2xu"/>
+                    <constraint firstItem="nsF-K0-n0x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ZE0-tP-ozk"/>
+                    <constraint firstItem="nsF-K0-n0x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="g0R-Hx-Xuv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="labelTitle" destination="nsF-K0-n0x" id="ll0-5a-00D"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="179"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CelebrityInterviewsArticleTableViewCell1" id="2kk-9S-NyM" customClass="CelebrityInterviewsArticleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2kk-9S-NyM" id="y8C-QM-xyu">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt3-vg-L2l">
+                        <rect key="frame" x="86.5" y="10" width="218.5" height="23.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="13.5" id="mJc-lY-WJk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专访人物：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2G-Ck-1OS">
+                        <rect key="frame" x="15" y="10" width="71.5" height="23.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71.5" id="xwU-Ls-yfs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kt3-vg-L2l" firstAttribute="top" secondItem="y8C-QM-xyu" secondAttribute="top" constant="10" id="4aw-wk-Bbi"/>
+                    <constraint firstItem="d2G-Ck-1OS" firstAttribute="top" secondItem="y8C-QM-xyu" secondAttribute="top" constant="10" id="95r-yc-lGB"/>
+                    <constraint firstItem="d2G-Ck-1OS" firstAttribute="leading" secondItem="y8C-QM-xyu" secondAttribute="leading" constant="15" id="bYM-Ce-tm5"/>
+                    <constraint firstAttribute="bottom" secondItem="kt3-vg-L2l" secondAttribute="bottom" constant="10" id="lSL-ko-bKK"/>
+                    <constraint firstAttribute="trailing" secondItem="kt3-vg-L2l" secondAttribute="trailing" constant="15" id="qxu-IK-6EN"/>
+                    <constraint firstAttribute="bottom" secondItem="d2G-Ck-1OS" secondAttribute="bottom" constant="10" id="r95-pV-8yP"/>
+                    <constraint firstItem="kt3-vg-L2l" firstAttribute="leading" secondItem="d2G-Ck-1OS" secondAttribute="trailing" id="xvm-xB-rKk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="pTj-l0-Vz8"/>
+            <connections>
+                <outlet property="labelTitle" destination="kt3-vg-L2l" id="Mca-z1-JCu"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="311"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CelebrityInterviewsArticleTableViewCell2" id="jVx-RE-A7t" customClass="CelebrityInterviewsArticleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jVx-RE-A7t" id="UAK-kM-hkk">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-01-01" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rv-U1-fM0">
+                        <rect key="frame" x="15" y="10" width="66" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13.5" id="8j4-R7-kBX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59993284940719604" green="0.60003870725631714" blue="0.5999261736869812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfM-tI-PVa">
+                        <rect key="frame" x="297" y="9.5" width="8" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggj-Es-Nrp">
+                        <rect key="frame" x="234" y="9.5" width="8" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59993284940000002" green="0.60003870729999997" blue="0.59992617370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_liulan_hi" translatesAutoresizingMaskIntoConstraints="NO" id="dEO-x9-4gY">
+                        <rect key="frame" x="211" y="12.5" width="15" height="10"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-PY-7x0">
+                        <rect key="frame" x="278" y="0.0" width="42" height="30"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="icon_dianzan_sel" translatesAutoresizingMaskIntoConstraints="NO" id="bA9-c3-pdz">
+                        <rect key="frame" x="278" y="11.5" width="11" height="12"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bA9-c3-pdz" firstAttribute="centerY" secondItem="dEO-x9-4gY" secondAttribute="centerY" id="2KH-Zi-6cV"/>
+                    <constraint firstItem="h3c-PY-7x0" firstAttribute="top" secondItem="UAK-kM-hkk" secondAttribute="top" id="2lK-Fc-a6B"/>
+                    <constraint firstItem="2rv-U1-fM0" firstAttribute="top" secondItem="UAK-kM-hkk" secondAttribute="top" constant="10" id="8J7-4z-YiV"/>
+                    <constraint firstItem="bfM-tI-PVa" firstAttribute="centerY" secondItem="2rv-U1-fM0" secondAttribute="centerY" id="9mN-Lh-ltx"/>
+                    <constraint firstItem="ggj-Es-Nrp" firstAttribute="centerY" secondItem="dEO-x9-4gY" secondAttribute="centerY" id="B9X-BK-I8j"/>
+                    <constraint firstItem="bfM-tI-PVa" firstAttribute="centerY" secondItem="bA9-c3-pdz" secondAttribute="centerY" id="KBt-Gt-80e"/>
+                    <constraint firstAttribute="trailing" secondItem="h3c-PY-7x0" secondAttribute="trailing" id="NrI-fU-td0"/>
+                    <constraint firstItem="bA9-c3-pdz" firstAttribute="leading" secondItem="ggj-Es-Nrp" secondAttribute="trailing" constant="36" id="Vl2-Wl-nYr"/>
+                    <constraint firstAttribute="trailing" secondItem="bfM-tI-PVa" secondAttribute="trailing" constant="15" id="h9X-ta-qGx"/>
+                    <constraint firstAttribute="bottom" secondItem="2rv-U1-fM0" secondAttribute="bottom" constant="10" id="hp5-Yq-dGS"/>
+                    <constraint firstAttribute="bottom" secondItem="h3c-PY-7x0" secondAttribute="bottom" id="huK-oK-dA7"/>
+                    <constraint firstItem="dEO-x9-4gY" firstAttribute="centerY" secondItem="2rv-U1-fM0" secondAttribute="centerY" id="kv7-r9-09W"/>
+                    <constraint firstItem="2rv-U1-fM0" firstAttribute="leading" secondItem="UAK-kM-hkk" secondAttribute="leading" constant="15" id="m44-Wp-dRl"/>
+                    <constraint firstItem="bA9-c3-pdz" firstAttribute="centerY" secondItem="2rv-U1-fM0" secondAttribute="centerY" id="ojZ-qB-D1C"/>
+                    <constraint firstItem="bfM-tI-PVa" firstAttribute="leading" secondItem="bA9-c3-pdz" secondAttribute="trailing" constant="8" id="s1C-5M-cs1"/>
+                    <constraint firstItem="h3c-PY-7x0" firstAttribute="leading" secondItem="bA9-c3-pdz" secondAttribute="leading" id="tUI-Rm-bMQ"/>
+                    <constraint firstItem="ggj-Es-Nrp" firstAttribute="leading" secondItem="dEO-x9-4gY" secondAttribute="trailing" constant="8" id="tzM-a1-RcV"/>
+                    <constraint firstItem="ggj-Es-Nrp" firstAttribute="centerY" secondItem="dEO-x9-4gY" secondAttribute="centerY" id="xmv-NF-Mto"/>
+                    <constraint firstItem="ggj-Es-Nrp" firstAttribute="centerY" secondItem="2rv-U1-fM0" secondAttribute="centerY" id="ylK-nE-bMD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="I4p-Om-BbV"/>
+            <connections>
+                <outlet property="buttonLike" destination="h3c-PY-7x0" id="dcZ-ft-tE3"/>
+                <outlet property="imageViewLike" destination="bA9-c3-pdz" id="Ihl-Bh-fVS"/>
+                <outlet property="labelLikeNumber" destination="ggj-Es-Nrp" id="kzM-Sh-gPu"/>
+                <outlet property="labelTitle" destination="2rv-U1-fM0" id="bhi-1A-26z"/>
+                <outlet property="labelWatchNumber" destination="bfM-tI-PVa" id="iIg-57-xQf"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="433"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CelebrityInterviewsArticleTableViewCell3" id="8T6-CU-44h" customClass="CelebrityInterviewsArticleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8T6-CU-44h" id="R30-Lz-3yc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Joh-vB-MBi"/>
+            <point key="canvasLocation" x="34" y="538"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_dianzan_sel" width="11" height="12"/>
+        <image name="icon_liulan_hi" width="15" height="10"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BLEJBudgetTemplateGroupHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="278" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="基础模板" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cru-2B-ODI">
+                        <rect key="frame" x="10" y="0.0" width="139" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9D-t8-Hff">
+                        <rect key="frame" x="198" y="7" width="30" height="30"/>
+                        <state key="normal" image="-"/>
+                        <connections>
+                            <action selector="didClickMinusBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xCw-Ia-ohQ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jj-iE-EIu">
+                        <rect key="frame" x="238" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="C32-lt-YHL"/>
+                            <constraint firstAttribute="height" constant="30" id="pFx-g3-jSb"/>
+                        </constraints>
+                        <state key="normal" image="+"/>
+                        <connections>
+                            <action selector="didClickPlusBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hZU-aA-fTg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Cru-2B-ODI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0ZB-cZ-ktg"/>
+                    <constraint firstItem="M9D-t8-Hff" firstAttribute="height" secondItem="6Jj-iE-EIu" secondAttribute="height" id="1Tq-Zo-qYq"/>
+                    <constraint firstItem="M9D-t8-Hff" firstAttribute="width" secondItem="6Jj-iE-EIu" secondAttribute="width" id="2dj-0K-bVv"/>
+                    <constraint firstAttribute="trailing" secondItem="6Jj-iE-EIu" secondAttribute="trailing" constant="10" id="3pC-Pt-Wnb"/>
+                    <constraint firstItem="6Jj-iE-EIu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9NJ-SO-j3b"/>
+                    <constraint firstItem="M9D-t8-Hff" firstAttribute="centerY" secondItem="6Jj-iE-EIu" secondAttribute="centerY" id="BXY-2e-yFn"/>
+                    <constraint firstItem="Cru-2B-ODI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="PQu-2g-90E"/>
+                    <constraint firstItem="6Jj-iE-EIu" firstAttribute="leading" secondItem="M9D-t8-Hff" secondAttribute="trailing" constant="10" id="RgV-kA-aJP"/>
+                    <constraint firstAttribute="bottom" secondItem="Cru-2B-ODI" secondAttribute="bottom" id="f5E-El-kQT"/>
+                    <constraint firstItem="Cru-2B-ODI" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:2" id="vtC-3F-xJR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="minusBtn" destination="M9D-t8-Hff" id="qnl-oI-ico"/>
+                <outlet property="nameLabel" destination="Cru-2B-ODI" id="P3x-cv-iki"/>
+                <outlet property="plusBtn" destination="6Jj-iE-EIu" id="mEU-GA-vxj"/>
+            </connections>
+            <point key="canvasLocation" x="-36" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="+" width="19" height="19"/>
+        <image name="-" width="19" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ActivityManageThreeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1I-bf-U0f">
+                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="59.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="关闭报名">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="closeBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bmp-0v-aKF"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCE-Lw-eP3">
+                        <rect key="frame" x="106.5" y="0.0" width="107" height="59.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="查看详情">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="checkDetailBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6ES-6Z-OLT"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gM8-X5-ZZ6">
+                        <rect key="frame" x="213.5" y="0.0" width="106.5" height="59.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="重新发布">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="rePublicBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="azh-7I-j3V"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axq-cj-Sbs">
+                        <rect key="frame" x="105.5" y="8" width="1" height="44"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="eeo-AU-l1C"/>
+                            <constraint firstAttribute="height" constant="44" id="pLF-Ay-7Kj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOB-MY-bTz">
+                        <rect key="frame" x="212.5" y="8" width="1" height="44"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="NXC-GQ-Emc"/>
+                            <constraint firstAttribute="height" constant="44" id="fLS-ap-4of"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SCE-Lw-eP3" secondAttribute="bottom" id="6ua-Y1-fTv"/>
+                    <constraint firstAttribute="bottom" secondItem="x1I-bf-U0f" secondAttribute="bottom" id="8o8-MD-KiJ"/>
+                    <constraint firstItem="x1I-bf-U0f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JDd-Ce-Bpb"/>
+                    <constraint firstItem="gM8-X5-ZZ6" firstAttribute="leading" secondItem="GOB-MY-bTz" secondAttribute="trailing" id="KNv-E4-uuf"/>
+                    <constraint firstItem="GOB-MY-bTz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PLD-09-nLN"/>
+                    <constraint firstItem="gM8-X5-ZZ6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PUK-Rb-P9B"/>
+                    <constraint firstItem="SCE-Lw-eP3" firstAttribute="width" secondItem="x1I-bf-U0f" secondAttribute="width" id="Rgs-e3-jGB"/>
+                    <constraint firstAttribute="bottom" secondItem="gM8-X5-ZZ6" secondAttribute="bottom" id="YCJ-GR-WNm"/>
+                    <constraint firstItem="SCE-Lw-eP3" firstAttribute="height" secondItem="x1I-bf-U0f" secondAttribute="height" id="cIs-nS-Clx"/>
+                    <constraint firstAttribute="trailing" secondItem="gM8-X5-ZZ6" secondAttribute="trailing" id="gA4-Ab-Ebk"/>
+                    <constraint firstItem="gM8-X5-ZZ6" firstAttribute="leading" secondItem="SCE-Lw-eP3" secondAttribute="trailing" id="iqF-et-zkX"/>
+                    <constraint firstItem="SCE-Lw-eP3" firstAttribute="leading" secondItem="Axq-cj-Sbs" secondAttribute="trailing" id="lur-0z-iGg"/>
+                    <constraint firstItem="gM8-X5-ZZ6" firstAttribute="height" secondItem="x1I-bf-U0f" secondAttribute="height" id="mNg-PO-eQa"/>
+                    <constraint firstItem="gM8-X5-ZZ6" firstAttribute="width" secondItem="x1I-bf-U0f" secondAttribute="width" id="nJZ-1C-QSA"/>
+                    <constraint firstItem="Axq-cj-Sbs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="t0j-45-9uc"/>
+                    <constraint firstItem="SCE-Lw-eP3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uuH-RL-i59"/>
+                    <constraint firstItem="SCE-Lw-eP3" firstAttribute="leading" secondItem="x1I-bf-U0f" secondAttribute="trailing" id="zSG-PI-L85"/>
+                    <constraint firstItem="x1I-bf-U0f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zmW-Td-L36"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="colseSignUpBtn" destination="x1I-bf-U0f" id="HKm-KE-7GK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,1 @@
+../../../CQSideBarManager/CQSideBarManager/CQSideBarManager.h

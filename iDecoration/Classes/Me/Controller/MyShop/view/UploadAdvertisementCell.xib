@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UploadAdvertisementCell" rowHeight="109" id="KGk-i7-Jjw" customClass="UploadAdvertisementCell">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jia_kuang" translatesAutoresizingMaskIntoConstraints="NO" id="vuM-v2-pay">
+                        <rect key="frame" x="16" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4Ov-ih-0DS"/>
+                            <constraint firstAttribute="height" constant="60" id="VIs-9A-zCA"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUB-wC-XLi">
+                        <rect key="frame" x="8" y="108.5" width="313" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qVb-0S-s2x"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建议上传1000*600尺寸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRS-EW-FTq">
+                        <rect key="frame" x="16" y="78" width="170.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jWJ-Bk-dd6" customClass="PlaceHolderTextView">
+                        <rect key="frame" x="94" y="10" width="219" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CUB-wC-XLi" firstAttribute="top" secondItem="vuM-v2-pay" secondAttribute="bottom" constant="38.5" id="6Hh-P1-WaR"/>
+                    <constraint firstAttribute="trailing" secondItem="CUB-wC-XLi" secondAttribute="trailing" constant="8" id="ImN-YG-JPf"/>
+                    <constraint firstItem="dRS-EW-FTq" firstAttribute="top" secondItem="vuM-v2-pay" secondAttribute="bottom" constant="8" id="Rpq-4p-7kg"/>
+                    <constraint firstItem="jWJ-Bk-dd6" firstAttribute="top" secondItem="vuM-v2-pay" secondAttribute="top" id="WB5-qY-AxN"/>
+                    <constraint firstAttribute="bottom" secondItem="CUB-wC-XLi" secondAttribute="bottom" id="XIN-Ei-rGE"/>
+                    <constraint firstItem="vuM-v2-pay" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aZj-U9-aVa"/>
+                    <constraint firstItem="dRS-EW-FTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dhM-3l-pkY"/>
+                    <constraint firstItem="jWJ-Bk-dd6" firstAttribute="leading" secondItem="vuM-v2-pay" secondAttribute="trailing" constant="18" id="gDM-ts-ram"/>
+                    <constraint firstItem="vuM-v2-pay" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="hgT-tK-h6M"/>
+                    <constraint firstItem="jWJ-Bk-dd6" firstAttribute="height" secondItem="vuM-v2-pay" secondAttribute="height" id="nHf-uu-lhN"/>
+                    <constraint firstAttribute="trailing" secondItem="jWJ-Bk-dd6" secondAttribute="trailing" constant="16" id="pTO-So-KDW"/>
+                    <constraint firstItem="CUB-wC-XLi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="zVU-91-Lcg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageV" destination="vuM-v2-pay" id="LO1-4T-a99"/>
+                <outlet property="imageViewHeightCons" destination="VIs-9A-zCA" id="AbK-BS-p9P"/>
+                <outlet property="imageViewWidthCons" destination="4Ov-ih-0DS" id="4Cn-5P-Izy"/>
+                <outlet property="lineView" destination="CUB-wC-XLi" id="esE-fF-Dj5"/>
+                <outlet property="lineViewTopCon" destination="6Hh-P1-WaR" id="hUl-uC-esO"/>
+                <outlet property="placeHolderTV" destination="jWJ-Bk-dd6" id="WHQ-WU-Bek"/>
+                <outlet property="promptLabel" destination="dRS-EW-FTq" id="ccx-2i-dHe"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="87"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jia_kuang" width="40" height="40"/>
+    </resources>
+</document>

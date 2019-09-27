@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="KGk-i7-Jjw" customClass="BLEJPRriceDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="143.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZQj-Yr-lj2">
+                        <rect key="frame" x="10" y="46" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="tk9-rg-Lqu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三文鱼装饰设计工程有限公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cj-cu-kUS">
+                        <rect key="frame" x="80" y="11" width="261" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="qPu-Sb-tij"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="河北省-廊坊市-霸州市 鼓楼街2号 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ub6-YS-FDD">
+                        <rect key="frame" x="80" y="42" width="259.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="dUH-HD-JFz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-06-22 21：30:56 到期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW2-ci-T0L">
+                        <rect key="frame" x="80" y="73" width="219" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2ne-Xz-oFU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wd0-kl-e9E">
+                        <rect key="frame" x="128" y="102" width="31" height="30"/>
+                        <state key="normal" title="续费"/>
+                        <connections>
+                            <action selector="ContinutToGiveMoney:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nIR-8B-Pbk"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ha-5G-i9x">
+                        <rect key="frame" x="208" y="102" width="62" height="30"/>
+                        <state key="normal" title="取消推送"/>
+                        <connections>
+                            <action selector="cancelTopushNews:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Gps-Ex-jLH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ub6-YS-FDD" firstAttribute="leading" secondItem="fW2-ci-T0L" secondAttribute="leading" id="04n-cD-4hr"/>
+                    <constraint firstItem="ZQj-Yr-lj2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8dT-cq-npn"/>
+                    <constraint firstItem="2Ha-5G-i9x" firstAttribute="leading" secondItem="wd0-kl-e9E" secondAttribute="trailing" constant="49" id="9Xb-kb-OAo"/>
+                    <constraint firstAttribute="trailing" secondItem="2Ha-5G-i9x" secondAttribute="trailing" constant="99" id="9xg-8T-1h6"/>
+                    <constraint firstItem="2Ha-5G-i9x" firstAttribute="top" secondItem="fW2-ci-T0L" secondAttribute="bottom" constant="8" id="JG2-xR-stE"/>
+                    <constraint firstItem="wd0-kl-e9E" firstAttribute="leading" secondItem="ZQj-Yr-lj2" secondAttribute="trailing" constant="68" id="JI7-Ju-R6P"/>
+                    <constraint firstItem="6cj-cu-kUS" firstAttribute="leading" secondItem="Ub6-YS-FDD" secondAttribute="leading" id="Om6-JL-f4n"/>
+                    <constraint firstItem="wd0-kl-e9E" firstAttribute="top" secondItem="fW2-ci-T0L" secondAttribute="bottom" constant="8" symbolic="YES" id="UcI-Sn-Lw6"/>
+                    <constraint firstItem="6cj-cu-kUS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="YhC-qd-j5U"/>
+                    <constraint firstAttribute="trailing" secondItem="6cj-cu-kUS" secondAttribute="trailing" constant="28" id="ZGi-sj-Gtn"/>
+                    <constraint firstItem="fW2-ci-T0L" firstAttribute="top" secondItem="Ub6-YS-FDD" secondAttribute="bottom" constant="10" id="iKU-jq-07f"/>
+                    <constraint firstItem="Ub6-YS-FDD" firstAttribute="top" secondItem="6cj-cu-kUS" secondAttribute="bottom" constant="10" id="ilH-GC-5wW"/>
+                    <constraint firstItem="Ub6-YS-FDD" firstAttribute="leading" secondItem="ZQj-Yr-lj2" secondAttribute="trailing" constant="20" id="mGD-nv-Su9"/>
+                    <constraint firstItem="ZQj-Yr-lj2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="35" id="rmb-UL-z1a"/>
+                    <constraint firstItem="ZQj-Yr-lj2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zbn-eN-LEr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="ContractEndtime" destination="fW2-ci-T0L" id="pI3-6q-0vf"/>
+                <outlet property="companyAvatar" destination="ZQj-Yr-lj2" id="et6-Sp-nGd"/>
+                <outlet property="companyLocation" destination="Ub6-YS-FDD" id="Jv7-2p-DN6"/>
+                <outlet property="companyname" destination="6cj-cu-kUS" id="Xus-mt-PxH"/>
+            </connections>
+            <point key="canvasLocation" x="18.5" y="119"/>
+        </tableViewCell>
+    </objects>
+</document>

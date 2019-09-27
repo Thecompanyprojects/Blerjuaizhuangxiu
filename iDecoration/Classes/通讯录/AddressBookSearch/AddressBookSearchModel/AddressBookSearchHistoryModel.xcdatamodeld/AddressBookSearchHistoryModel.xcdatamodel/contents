@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="SearchHistoryModel" representedClassName="SearchHistoryModel" syncable="YES">
+        <attribute name="agencyId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SearchHistoryModel" positionX="-45" positionY="0" width="128" height="75"/>
+    </elements>
+</model>

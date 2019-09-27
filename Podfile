@@ -1,0 +1,37 @@
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target 'iDecoration' do
+pod 'AFNetworking','3.2.0'
+pod 'Masonry'
+pod 'SDWebImage','~> 3.7'
+pod 'SDWebImage/WebP'
+pod 'MJRefresh'
+pod 'MBProgressHUD', '0.9.2'
+pod 'FMDB'
+pod 'Reachability'
+pod 'YTKNetwork'
+pod 'YYModel'
+pod 'IQKeyboardManager'
+pod 'IQKeyboardManager'
+pod 'JPush','3.0.8'
+pod 'SKArchCutter'
+pod 'HyphenateLite'
+pod 'EaseUILite', :git =>'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git'
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'
+pod 'UMengAnalytics'
+pod 'WMPageController', '2.3.0'
+pod 'CGXPickerView'
+pod 'ICPagingManager'
+pod 'XYQRegexPattern'
+pod 'SDAutoLayout'
+pod 'LXMButtonImagePosition'
+pod 'IAPHelper'
+pod 'GKCover'
+pod 'MagicalRecord', '~> 2.3.2'
+pod 'OpenShare'
+pod 'DZNEmptyDataSet'
+pod 'CQSideBarManager'
+end
+

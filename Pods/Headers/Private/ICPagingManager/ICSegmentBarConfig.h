@@ -1,0 +1,1 @@
+../../../ICPagingManager/ICPagingManager/Classes/ICSegmentBarConfig.h
